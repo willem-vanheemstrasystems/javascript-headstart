@@ -13,4 +13,4 @@ Chapter 01: Best Practices
 	- grunt (to run default task)
 	- grunt test (to run test task)
 
-- Using QUnit
+- Using QUnit (see http://qunitjs.com/)
