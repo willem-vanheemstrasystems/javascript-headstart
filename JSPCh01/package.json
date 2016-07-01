@@ -1,0 +1,21 @@
+{
+  "name": "jspch01",
+  "version": "1.0.0",
+  "description": "JavaScript Programming, Chapter 1",
+  "main": "Test.js",
+  "scripts": {
+    "pre-install": "npm install -g grunt-cli",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
