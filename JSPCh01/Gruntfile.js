@@ -1,5 +1,5 @@
 /**
- * Gruntfile.js 
+ * Gruntfile.js
  */
 module.exports = function(grunt) {
 	// Start the config's initialization function.
