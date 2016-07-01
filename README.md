@@ -8,3 +8,6 @@ The Book: 'JavaScript Programming - Pushing the Limits, Advanced Application Dev
 by Jon Raasch
 
 Chapter 01: Best Practices
+
+- Using Grunt
+- Using QUnit
