@@ -17,7 +17,17 @@ module.exports = function(grunt) {
 			dist: {
 				src: ['src/**/*.js'],
 				dest: 'dist/<%= pkg.name %>.js'
-			}
+			},
+			backbone: {
+			    files: {
+			      'dist/vendor/backbone/backbone.js': ['bower_components/backbone/backbone.js']
+			    }
+			},
+			underscore: {
+			    files: {
+			      'dist/vendor/underscore/underscore.js': ['bower_components/underscore/underscore.js']
+			    }
+			}			
 		},
 		// Configure a task for minification.
 		uglify: {
@@ -59,7 +69,13 @@ module.exports = function(grunt) {
 		watch: {
 			files: ['<%= jshint.files %>'],
 			tasks: ['jshint', 'qunit']
-		}
+		},
+		// Configure the bower install simple plugin
+	    'bower-install-simple': {
+	    	options: {
+            	color: true
+            }
+	    }
 	});
 	// Load in the Grunt plugins.
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -67,10 +83,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-qunit');	
 	grunt.loadNpmTasks('grunt-contrib-jshint');	
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks("grunt-bower-install-simple");	
 	// Setup the tasks to run,
 	// most importantly the default task.
 	// To run the test task, run: grunt test
 	grunt.registerTask('test', ['jshint', 'qunit']);
+	// To run the bower task, run: grunt bower
+	grunt.registerTask('bower', ['bower-install-simple', 'concat']);
 	// To run the default task, run: grunt
 	grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
 };
