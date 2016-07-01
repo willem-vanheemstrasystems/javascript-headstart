@@ -9,5 +9,8 @@ by Jon Raasch
 
 Chapter 01: Best Practices
 
-- Using Grunt
+- Using Grunt, run:
+	- grunt (to run default task)
+	- grunt test (to run test task)
+
 - Using QUnit
