@@ -74,8 +74,27 @@ module.exports = function(grunt) {
 	    'bower-install-simple': {
 	    	options: {
             	color: true
-            }	
-	    }
+            	//directory: 'dist' THIS IS HANDLED IN concat
+            },
+	        'prod': {
+	            options: {
+	                production: true
+	            }
+	        },
+	        'dev': {
+	            options: {
+	                production: false
+	            }
+	        } 	
+	    },
+		// Configure the process html plugin
+	    'processhtml': {
+	        build: {
+	            files: {
+	                'dist/demo.html' : ['src/demo.html']
+	            }
+	        }    	
+	    }	    
 	});
 	// Load in the Grunt plugins.
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -83,13 +102,17 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-qunit');	
 	grunt.loadNpmTasks('grunt-contrib-jshint');	
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks("grunt-bower-install-simple");	
+	grunt.loadNpmTasks("grunt-bower-install-simple");
+	// See also https://gielberkers.com/process-html-grunt/
+	grunt.loadNpmTasks('grunt-processhtml');	
 	// Setup the tasks to run,
 	// most importantly the default task.
 	// To run the test task, run: grunt test
 	grunt.registerTask('test', ['jshint', 'qunit']);
 	// To run the bower task, run: grunt bower
-	grunt.registerTask('bower', ['bower-install-simple', 'concat']);	
+	grunt.registerTask('bower', ['bower-install-simple', 'concat']);
+	// To run the process html task, run : grunt process-html
+	grunt.registerTask('process-html', ['processhtml', 'concat']);		
 	// To run the default task, run: grunt
 	grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
 };
