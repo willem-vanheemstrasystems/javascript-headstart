@@ -1,7 +1,7 @@
 {
-  "name": "jspch03",
-  "description": "JavaScript Programming, Chapter 3",
-  "main": "index.js",
+  "name": "jspch01",
+  "description": "JavaScript Programming, Chapter 1",
+  "main": "Test.js",
   "authors": [
     "wvanheemstra <willem@vanheemstrasystems.com>"
   ],
@@ -15,7 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "backbone": "^1.3.3",
     "jquery": "^3.0.0"
   }
 }
