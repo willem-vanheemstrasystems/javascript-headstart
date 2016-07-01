@@ -64,6 +64,13 @@ See https://addyosmani.com/backbone-fundamentals/
 
 __
 
+References: Essential JS Design Patterns
+By Addy Osmani (@addyosmani)
+
+See https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+
+__
+
 References: Managing Bower components with Grunt
 
 See https://simonsmith.io/managing-bower-components-with-grunt/
