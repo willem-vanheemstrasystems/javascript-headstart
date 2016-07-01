@@ -55,7 +55,15 @@ To use QUnit, you only need to include two QUnit files on your HTML page. QUnit 
 
 - Underscore (http://underscorejs.org)
 
+__
+
 References: Developing Backbone.js Applications
 By Addy Osmani (@addyosmani)
 
 See https://addyosmani.com/backbone-fundamentals/
+
+__
+
+References: Managing Bower components with Grunt
+
+See https://simonsmith.io/managing-bower-components-with-grunt/
