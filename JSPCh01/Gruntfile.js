@@ -73,4 +73,4 @@ module.exports = function(grunt) {
 	grunt.registerTask('test', ['jshint', 'qunit']);
 	// To run the default task, run: grunt
 	grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
-}
+};
