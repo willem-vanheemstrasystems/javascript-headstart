@@ -47,7 +47,7 @@ To use QUnit, you only need to include two QUnit files on your HTML page. QUnit 
 
 - JQuery Plugins (http://plugins.jquery.com)
 
-#Part II Building the Front Ednd
+#Part II Building the Front End
 
 ##Chapter 03: Backbone
 
