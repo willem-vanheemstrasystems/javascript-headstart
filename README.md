@@ -7,23 +7,23 @@ The Book: 'JavaScript Programming - Pushing the Limits, Advanced Application Dev
 
 by Jon Raasch
 
-#Part I Starting from a Firm Foundation
+# Part I Starting from a Firm Foundation
 
-##Chapter 01: Best Practices
+## Chapter 01: Best Practices
 
-###Using Grunt, run:
+### Using Grunt, run:
 	- grunt (to run default task)
 	- grunt test (to run test task)
 
-###Using QUnit (see http://qunitjs.com/)
+### Using QUnit (see http://qunitjs.com/)
 
 See also http://qunitjs.com/cookbook/
 
 To use QUnit, you only need to include two QUnit files on your HTML page. QUnit consists of qunit.js, the test runner and testing framework, and qunit.css, which styles the test suite page to display test results.
 
-##Chapter 02: Libraries, Frameworks, and Plugins
+## Chapter 02: Libraries, Frameworks, and Plugins
 
-###Using a Library
+### Using a Library
 
 - JQuery (http://api.jquery.com)
 
@@ -31,13 +31,13 @@ To use QUnit, you only need to include two QUnit files on your HTML page. QUnit 
 
 - Vanilla DOM (i.e. plain JavaScript)
 
-###Using a Framework
+### Using a Framework
 
 - Bootstrap (http://twitter.github.com/bootstrap/)
 
 - JQuery UI (http://api.jquery.com)
 
-###Plugins and Scripts
+### Plugins and Scripts
 
 - Modernizr (http://www.modenizr.com)
 
@@ -47,9 +47,9 @@ To use QUnit, you only need to include two QUnit files on your HTML page. QUnit 
 
 - JQuery Plugins (http://plugins.jquery.com)
 
-#Part II Building the Front End
+# Part II Building the Front End
 
-##Chapter 03: Backbone
+## Chapter 03: Backbone
 
 - Backbone (http://backbonejs.org)
 
